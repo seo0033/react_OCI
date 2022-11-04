@@ -1,0 +1,222 @@
+@use 'basic.scss';
+
+
+.sc {
+    padding: 100px 0;
+}
+
+h2 {
+    margin: 0 0 50px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 25px;
+    background: basic.$mc;
+    margin: 0 10px 0 0;
+}
+
+.MainVisual {
+    position: relative;
+
+    .SlideItm {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .des {
+            position: absolute;
+            top: 50%;
+            left: calc((100% - 1170px)/2);
+            transform: translateY(-50%);
+
+            .tit {
+                margin: 0 0 15px 0;
+                font-size: 55px;
+                font-weight: 800;
+                color: basic.$mc;
+                text-shadow: 0 0 1px #333;
+            }
+
+            p {
+                margin: 0 0 30px 0;
+                font-size: 21px;
+                font-weight: 400;
+                color: basic.$wc;
+                text-shadow: 0 0 1px #333;
+            }
+
+            a {
+                background: basic.$mc;
+                color: basic.$wc;
+                padding: 10px 25px;
+            }
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: basic.$mc;
+    }
+
+    .swiper-button-next {
+        margin: 0 30px 0 0;
+    }
+
+    .swiper-button-prev {
+        margin: 0 0 0 30px;
+    }
+
+    .swiper-pagination {
+        bottom: 10%;
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: basic.$mc;
+        }
+    }
+}
+
+.MainBusiness {
+    .Business {
+        display: flex;
+        gap: 10px;
+
+        .BusinessItm {
+            position: relative;
+            overflow: hidden;
+
+            .BTitle {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                background: rgba($color: #000000, $alpha: 0.5);
+                color: basic.$wc;
+                font-size: 19px;
+                font-weight: 500;
+                transition: 0.5s;
+
+                span {
+                    padding: 10px 20px;
+                    background: basic.$mc ;
+                }
+            }
+
+            img {
+                transition: 0.5s;
+            }
+
+            &:hover img {
+                transform: scale(1.2);
+            }
+
+            &:hover .BTitle {
+                display: flex;
+            }
+
+        }
+
+
+    }
+}
+
+.About {
+    background: #f9f9f9;
+    text-align: center;
+
+    h2 {
+        margin: 0 0 15px 0;
+    }
+
+    p {
+        margin: 0 0 50px 0;
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    video {
+        max-width: 100%;
+    }
+}
+
+.News {
+    padding: 100px 0 0 150px 0;
+
+    h2 {
+        margin: 0 0 100px 0;
+    }
+
+    .swiper {
+        position: relative;
+        overflow: visible;
+
+        &::before {
+            position: absolute;
+            top: -50px;
+            left: calc((100% - 1170px)/2);
+            content: "";
+            display: inline-block;
+            height: 550px;
+            width: 385px;
+            background: basic.$mc;
+        }
+    }
+
+    .NewsBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 450px;
+        padding: 0 30px;
+        background: basic.$wc;
+        transition: 0.5s;
+
+        &:hover {
+            max-height: 430px;
+            border: 10px solid basic.$mc;
+        }
+
+
+        span {
+            display: block;
+            margin: 0 0 10px 0;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        strong {
+            display: block;
+            margin: 0 0 30px 0;
+            font-size: 29px;
+            font-weight: 700;
+            color: basic.$mc;
+        }
+
+        figure {
+            margin: 0 0 30px 0;
+        }
+
+        .des {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1.25;
+        }
+    }
+
+}
