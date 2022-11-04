@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react_oci/static/css/main.70318bfa.css",
+    "main.js": "/react_oci/static/js/main.bd181f5c.js",
+    "index.html": "/react_oci/index.html",
+    "main.70318bfa.css.map": "/react_oci/static/css/main.70318bfa.css.map",
+    "main.bd181f5c.js.map": "/react_oci/static/js/main.bd181f5c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70318bfa.css",
+    "static/js/main.bd181f5c.js"
+  ]
+}
